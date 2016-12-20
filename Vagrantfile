@@ -3,6 +3,7 @@
 
 Vagrant.configure(2) do |config|
   config.vm.provider "docker" do |d|
+
     d.has_ssh = true
     d.image = "apache_mongo_webapp_docker_template:v1"
 

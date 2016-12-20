@@ -1,5 +1,5 @@
 FROM tknerr/baseimage-ubuntu:14.04
-RUN apt-get update && apt-get -y install vim
+RUN apt-get update && apt-get -y install vim nano
 RUN apt-get -y install mongodb python-pip python-dev git apache2 libapache2-mod-wsgi
 RUN pip install pymongo==3.4
 RUN pip install mongoengine
